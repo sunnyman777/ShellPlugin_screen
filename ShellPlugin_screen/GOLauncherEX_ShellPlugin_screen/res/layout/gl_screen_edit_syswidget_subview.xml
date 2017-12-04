@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.screenedit.GLSysWidgetSubView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/previewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <!-- com.jiubang.shell.screenedit.tabs.PreviewImage -->
+
+        <ImageView
+            android:id="@+id/widgetPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/screen_edit_syswidget_subview_ver_margin"
+            android:layout_marginLeft="@dimen/screen_edit_syswidget_subview_hor_margin"
+            android:layout_marginRight="@dimen/screen_edit_syswidget_subview_hor_margin"
+            android:layout_marginTop="@dimen/screen_edit_syswidget_subview_ver_margin" />
+
+        <ImageView
+            android:id="@+id/widgetIcon"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_alignLeft="@id/widgetPreview"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gl_ic_launcher_application"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/widgetstyletitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/widgetstyleformat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffffff"
+        android:textSize="14sp" />
+
+</com.jiubang.shell.screenedit.GLSysWidgetSubView>

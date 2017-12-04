@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.appdrawer.search.GLAppDrawerSearchHeader xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/app_search_grid_view_ttile"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="26dp"
+        android:gravity="center"
+        android:textColor="#FEFEFE"
+        android:textSize="16sp" >
+    </com.jiubang.shell.common.component.ShellTextViewWrapper>
+
+    <ImageView
+        android:id="@+id/app_search_header_baseline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_search_grid_view_ttile"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/gl_search_title_underline" >
+    </ImageView>
+
+    <com.jiubang.shell.appdrawer.search.GLSearchClearButton
+        android:id="@+id/app_search_header_clear_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/app_search_header_baseline"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:visibility="gone" >
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/appdrawer_slide_menu_clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:textColor="@android:color/white"
+            android:textSize="14.8sp" />
+    </com.jiubang.shell.appdrawer.search.GLSearchClearButton>
+
+</com.jiubang.shell.appdrawer.search.GLAppDrawerSearchHeader>

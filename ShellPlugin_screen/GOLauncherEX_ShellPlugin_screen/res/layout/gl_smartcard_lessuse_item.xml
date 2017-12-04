@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.folder.smartcard.GLLessUseAppItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.go.gl.widget.GLImageView
+        android:id="@+id/app_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+         />
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12.5sp" />
+
+<!--     <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:layout_marginTop="2dp"
+        android:id="@+id/app_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="4.8M"
+        android:textColor="#FFFFFFFF"
+        android:textSize="14sp" /> -->
+
+</com.jiubang.shell.folder.smartcard.GLLessUseAppItemLayout>

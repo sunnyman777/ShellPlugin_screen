@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true" >
+
+    <include
+        android:id="@+id/gl_search_input_bar"
+        android:layout_alignParentTop="true"
+        layout="@layout/gl_appdrawer_search_input_bar" />
+
+    <com.jiubang.shell.appdrawer.search.GLAppDrawerSearchListView
+        android:id="@+id/gl_search_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gl_search_input_bar" >
+    </com.jiubang.shell.appdrawer.search.GLAppDrawerSearchListView>
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/gl_search_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gl_search_input_bar"
+        android:layout_centerHorizontal="true"
+        android:drawableTop="@drawable/gl_search_no_data"
+        android:gravity="center_horizontal"
+        android:paddingTop="75dp"
+        android:text="no data"
+        android:textSize="16sp"
+        android:visibility="invisible" >
+    </com.jiubang.shell.common.component.ShellTextViewWrapper>
+
+    <ProgressBar
+        android:id="@+id/gl_search_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/gl_search_input_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

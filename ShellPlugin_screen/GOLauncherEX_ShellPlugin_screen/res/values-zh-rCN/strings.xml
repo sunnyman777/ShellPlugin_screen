@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<!-- 5.0激活码 -->
+	<string name="activationcode_activation_success">激活成功</string> 
+	<string name="activationcode_system_handle_failure">系统处理失败</string> 
+	<string name="activationcode_email_not_exist">Email不存在</string> 
+	<string name="activationcode_activation_code_lapsed">激活码已失效</string> 
+	<string name="activationcode_transcend_failure_number">邮箱验证超过失败次数，请明天再试</string> 
+	<string name="activationcode_email_lock">邮箱被锁</string> 
+	<string name="activationcode_activation_code_invalid">请输入正确的激活码</string> 
+	<string name="activationcode_activation_failure">激活失败</string>
+    <string name="activationcode_network_unavailable">网络不可用</string>
+    <string name="activationcode_enter_code">请输入激活码</string>
+	<string name="activationcode_get_now">立即体验</string>
+	<string name="menuitem_invite">邀请</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.folder.GLDockFolderIcon xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dock_foldericon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true" >
+-<!--android:layout_width="@dimen/app_icon_total_width"
+    android:layout_height="@dimen/app_icon_total_height"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/app_icon_padding_left_right"
+    android:paddingRight="@dimen/app_icon_padding_left_right"  -->
+    
+    <Model3DMultiView
+        android:id="@+id/multmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.jiubang.shell.folder.GLModelFolder3DView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" >
+        </com.jiubang.shell.folder.GLModelFolder3DView>
+
+        <ImageView
+            android:id="@+id/imge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:visibility="gone" />
+    </Model3DMultiView>
+</com.jiubang.shell.folder.GLDockFolderIcon>

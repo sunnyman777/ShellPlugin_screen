@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>    
+      <!-- 0屏 -->
+    <dimen name="zero_screen_ad_port_height">135.5dp</dimen>
+    <dimen name="zero_screen_ad_land_height">65dp</dimen>
+    <dimen name="zero_screen_ad_padding_left">16dp</dimen>
+    <dimen name="zero_screen_ad_padding_right">10dp</dimen>
+    <dimen name="zero_screen_ad_padding_top">7.5dp</dimen>
+    
+    <dimen name="zero_screen_ad_Spacing">5.5dp</dimen>
+    <dimen name="zero_screen_ad_icon_width">65dp</dimen>
+    <dimen name="zero_screen_ad_icon_height">71.5dp</dimen>
+    
+    
+    <dimen name="zero_screen_ad_webview_padding">18dp</dimen>
+</resources>

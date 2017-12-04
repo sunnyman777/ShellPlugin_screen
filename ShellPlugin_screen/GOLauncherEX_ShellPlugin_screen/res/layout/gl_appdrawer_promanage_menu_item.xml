@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.popupwindow.component.listmenu.appdrawer.GLProManageMenuItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/promanage_menu_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="96dp"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/txt_memory_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:singleLine="true"
+        android:text="Memory Info:"
+        android:textColor="@android:color/white"
+        android:textSize="10.7sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp" >
+
+        <com.jiubang.shell.appdrawer.component.GLMemoryCleanButton
+            android:id="@+id/clean_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/clean_button"
+            android:orientation="vertical" >
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/txt_memory_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="50%"
+                android:textColor="@color/promanage_memory_bar_progress_green"
+                android:textSize="27.3sp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/txt_memory_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="720M/1024M"
+                android:textColor="@android:color/white"
+                android:textSize="10.7sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_forward_promanage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/gl_appdrawer_promanage_menu_item_arrow" >
+        </ImageView>
+    </RelativeLayout>
+
+</com.jiubang.shell.popupwindow.component.listmenu.appdrawer.GLProManageMenuItem>

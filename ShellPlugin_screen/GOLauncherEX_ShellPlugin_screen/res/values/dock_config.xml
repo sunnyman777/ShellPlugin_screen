@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+          与DOCK条有关的设置 
+ -->
+<resources>
+    
+    <item name="dock_index" type="integer">-1</item>
+    <item name="dock_view_left" type="integer">0</item>
+    
+</resources>

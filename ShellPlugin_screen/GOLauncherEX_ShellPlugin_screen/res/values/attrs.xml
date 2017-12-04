@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 屏幕指示器 
+		<attr name="lightImage" format="integer"/>指示当前屏幕图片
+		<attr name="darkImage" format="integer"/>只是其他屏幕图片
+	-->
+	<declare-styleable name="GLScreenIndicator">
+		<attr name="gl_lightImage" format="integer"/>
+		<attr name="gl_darkImage" format="integer"/>
+		<attr name="gl_dotWidth" format="dimension"/>
+	</declare-styleable>
+	
+    	 <!-- CellLayout 单个屏幕布局 -->
+    <declare-styleable name="GLCellLayout">
+        <!-- The width of a single cell -->
+        <attr name="gl_cellWidth" format="dimension"  />
+        <!-- The height of a single cell -->
+        <attr name="gl_cellHeight" format="dimension"  />
+        <!-- Padding to apply at the start of the long axis -->
+        <attr name="gl_longAxisStartPadding" format="dimension"  />
+        <!-- Padding to apply at the end of the long axis -->
+        <attr name="gl_longAxisEndPadding" format="dimension"  />
+        <!-- Padding to apply at the start of the short axis -->
+        <attr name="gl_shortAxisStartPadding" format="dimension"  />
+        <!-- Padding to apply at the end of the short axis -->
+        <attr name="gl_shortAxisEndPadding" format="dimension"  />
+        <!-- Number of cells on the short axis of the CellLayout -->
+        <attr name="gl_shortAxisCells" format="integer" />
+        <!-- Number of cells on the long axis of the CellLayout -->
+        <attr name="gl_longAxisCells" format="integer" />
+        <attr name="gl_rows" format="integer"/>
+        <attr name="gl_columns" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="GLSenseWorkspace">
+        <attr name="gl_backgroundColor" format="color"/>
+    	<attr name="gl_cardRows" format="integer"/>
+        <attr name="gl_cardCols" format="integer"/>
+        <!-- 屏幕预览顶部给卡片预留的高度 -->
+        <attr name="gl_marginTop" format="dimension"/>
+        <!-- 屏幕预览顶部给卡片预留的高度 -->
+        <attr name="gl_marginBottom" format="dimension"/>
+        <!-- 屏幕预览顶部给卡片预留的高度 -->
+        <attr name="gl_marginLeft" format="dimension"/>
+        <!-- 屏幕预览顶部给卡片预留的高度 -->
+        <attr name="gl_marginRight" format="dimension"/>
+        <!-- 屏幕预览的宽度相对卡片之间水平空隙的最大倍数 -->
+        <attr name="gl_cardSpaceScaleX" format="integer"/>
+        <attr name="gl_cardSpaceScaleY" format="integer"/>
+    </declare-styleable>
+    
+    	<!--  progressbarcolor : ProgressBar颜色 1代表白色 0代表绿色
+		  background 0表示没黑色罩子 1表示有黑色罩子
+	-->
+
+</resources>

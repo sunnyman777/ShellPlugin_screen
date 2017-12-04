@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+		android:textColor="@android:color/white"
+        android:text="@string/menuitem_hide_tilt"
+        android:textSize="22sp" />
+
+    <com.jiubang.shell.appdrawer.hideapp.GLHideAppGridViewContainer
+        android:id="@+id/hide_app_viewgroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_above="@+id/buttons"
+        android:gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"/>
+
+    <RelativeLayout
+        android:id="@id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:id="@+id/hide_app_lock_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp" />
+
+        <ImageView
+            android:id="@+id/hide_app_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/gl_hide_app_edit_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

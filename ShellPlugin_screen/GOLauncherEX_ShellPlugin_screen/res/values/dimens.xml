@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><resources>
+
+    <!-- 功能表顶部与底部容器高度 -->
+    <dimen name="appdrawer_top_bar_container_height">64dp</dimen>
+    <dimen name="appdrawer_bottom_bar_container_height">60dp</dimen>
+    <!-- 功能表里面的图标的长宽 -->
+    <dimen name="app_icon_total_height">82dp</dimen>
+    <dimen name="app_icon_total_width">68dp</dimen>
+    <!-- 文件夹和编辑界面里面图标与图标行的最小间距 -->
+    
+    
+    <!-- 文件夹图标与图标列的最小间距 -->
+    
+    
+
+    <!-- 手机设备屏幕层里面的图标的长宽 -->
+    
+    
+    <!-- 平板设备屏幕层里面的图标的长宽 -->
+    
+    
+
+    <!-- 功能表与文件夹平板设备屏幕层里面的图标的长宽 -->
+    
+    
+    
+    <!-- 功能表程序图标里面的图片的上边距 -->
+    
+
+    <!-- 屏幕层程序图标里面的图片的上边距 -->
+    
+
+    <!-- 手机程序图标 -->
+    <dimen name="app_icon_size">48dp</dimen>
+    <!-- 手机程序图标跟文字的间距 -->
+    <dimen name="app_icon_text_pad">2.5dip</dimen>
+    <!-- 手机图标文字大小 -->
+    <dimen name="app_icon_font_size">12sp</dimen>
+    <!-- 平板程序图标 -->
+    <dimen name="app_icon_size_pad">60dp</dimen>
+    <!-- 平板程序图标跟文字的间距 -->
+    
+    <!-- 平板图标文字大小 -->
+    
+
+    <!-- 文件夹图标 -->
+    
+    <!-- 文件夹图标盖子 -->
+    
+    <!-- 文件夹图标文字大小 -->
+    
+    
+    <!-- 平板文件夹图标 -->
+    
+    <!-- 平板文件夹图标盖子 -->
+    
+    <!-- 平板文件夹图标跟文字的间距 -->
+    
+    <!-- 平板文件夹图标文字大小 -->
+    
+
+    <!-- 桌面程序图标文字大小 -->
+    
+    <!-- 功能表程序图标文字大小 -->
+    
+
+    <!-- 程序图标文字左右边距 -->
+    <dimen name="app_icon_padding_left_right">5dip</dimen>
+    
+    
+
+    <!-- 程序图标右上角红叉 的大小 -->
+    
+    
+
+    <!-- height of the bottom row of controls -->
+    
+
+    <!--
+         so we have access to this dimension in landscape mode even though
+         button_bar_height changes
+    -->
+    
+
+    <!--
+         roughly a status bar (for vertically centering the all apps
+         home icon in landscape)
+    -->
+    
+
+    <!--
+         roughly half a status bar (for vertically centering the right-hand
+         button cluster in landscape)
+    -->
+    
+    <dimen name="delete_zone_height">37dip</dimen>
+    <!-- 垃圾箱可点击宽度 -->
+    
+
+    <!-- delete_zone_size_full - button_bar_height_portrait -->
+    
+
+    <!--
+         the area at the edge of the screen that makes the workspace go left
+         or right while you're dragging.
+    -->
+    <dimen name="scroll_zone">20dp</dimen>
+
+    <!-- Folders -->
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- QuickActionMenu箭头左右边距 -->
+    <dimen name="qa_arrow_padding_left">16dip</dimen>
+    <dimen name="qa_arrow_padding_right">16dip</dimen>
+
+    <!-- 页面指示器 -->
+    
+    
+    
+    
+
+    <!-- Gowidget的页面指示器 -->
+    <dimen name="dots_indicator_width">21dip</dimen>
+    <dimen name="dots_indicator_height">25dip</dimen>
+    
+    
+    
+    
+    
+
+    <!-- 屏幕预览的卡片底图使用NinePatch图片，其边框间隙如下 -->
+    
+    
+    
+    
+
+    <!-- 桌面图标的边距 -->
+    
+    
+
+    <!-- workspace的边距 -->
+    
+    
+    
+    
+
+    <!-- 编辑界面CellLayout底纹的阴影大小 -->
+    
+    
+    
+    
+
+    <!-- 屏幕预览小窗口 -->
+    
+    
+    
+    
+    
+    
+
+    <!-- widget单元格大小，用于判断widget占用格子数 -->
+    
+    
+    
+    
+    
+    
+
+    <!-- widget管理2.0 -->
+    <!-- 小分辨率机型的图片宽高 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- appdrawer -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dimen name="appdrawer_waterfall_effector_size">25dip</dimen>
+    <dimen name="appdrawer_border_bg_size">6dip</dimen>
+
+    <!-- WorkspaceIcon -->
+    
+
+    <!-- 指示器可以点击高度 -->
+    
+    
+
+    <!-- 搜索图标大小 -->
+    
+    
+
+    <!-- 搜索dialog图标大小 -->
+    
+    
+
+    <!-- GO widget 选择样式 -->
+    
+    
+    
+    
+    <dimen name="screen_edit_gowidget_preimage_heght">217dip</dimen>
+    <dimen name="gowidget_title_icon_size">24dip</dimen>
+
+    <!-- 设置项 -->
+    <!-- 分割线的宽、高 -->
+    <dimen name="menu_divline_height">33dip</dimen>
+    
+
+    <!-- 图标飞入文件夹高度 -->
+    
+    
+    
+    
+
+    <!-- ColorPickerDialog -->
+    
+    
+
+    <!-- －－－－－－－打开文件夹－－－－－－－－－ -->
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- 文件夹打开界面重命名编辑框高度 -->
+    
+    <!-- 文件夹打开界面重命名编辑框高度 -->
+    
+    
+    
+    <!-- 文件夹打开界面指示器高度 -->
+    
+    <!-- 指示器的外边距 -->
+    
+
+    <!-- －－－－－－－－－－－打开应用程序编辑界面－－－－－－－－－－－－－－－－ -->
+    
+    
+    
+    
+    
+    
+    
+    <!-- 状态栏高度 -->
+    
+    <!-- 功能表布局 -->
+
+
+    <!-- 底部三个按钮高度 -->
+    
+
+    <!-- 底部三个按钮与底部的距离 -->
+    
+
+    <!-- 底部三个按钮与左右的距离 -->
+    
+
+    <!-- 功能表与底部的距离 （也就是底部三个按钮高度+底部三个按钮与底部的距离） -->
+    
+
+    <!-- 功能表与项部的距离 -->
+    
+
+    <!-- 设置项 桌面设置 -->
+    
+
+    <!-- BEGIN 自定义设置 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- END 自定义设置 -->
+    
+	<!-- 指示器横屏高度，只参与行列数自适应计算 -->
+	
+	
+	
+	
+	
+	<dimen name="slider_indicator_height">25dip</dimen>
+	
+		<!-- 页面指示器 -->
+	<dimen name="indicator_numeric_textsize">10sp</dimen>
+	
+	
+		<!--通讯统计 -->
+	
+	
+	<dimen name="dock_notify_font_size">14dip</dimen>
+	
+	
+	
+	<!-- 添加界面 start-->
+	<dimen name="screen_edit_tab_height_normal">90dp</dimen>
+	<dimen name="screen_edit_tab_height_large">270dp</dimen>
+	<dimen name="screen_edit_tab_height_large_limit">200dp</dimen>
+	<dimen name="screen_edit_tabtitle_height">50dip</dimen>
+	<dimen name="screen_edit_indicator_height">20dip</dimen>
+	<dimen name="screen_edit_tab_view_width">68dip</dimen>
+	<dimen name="screen_edit_tab_view_height">83dip</dimen>	
+	<dimen name="screen_edit_view_horizontal_space">8dip</dimen>	
+	
+	<dimen name="screen_edit_box_menu">100dip</dimen>
+	<dimen name="screen_edit_box_container_gowidgets">295dip</dimen>
+
+
+	<dimen name="screen_edit_view_height">90dip</dimen>
+	
+	<dimen name="screen_edit_subview_widght">130dip</dimen>
+		
+	<dimen name="screen_edit_subview_pic_widght">126dip</dimen>
+	
+	<dimen name="screen_edit_appgrid_height">13dip</dimen>
+	<dimen name="screen_edit_appgrid_width">7dip</dimen>
+	
+	
+	
+	<dimen name="screen_edit_view_vertical_pading">1dip</dimen>
+	
+
+	<dimen name="screen_edit_tab_view_max_height">270dip</dimen>
+	<dimen name="screen_edit_view_padding">6dip</dimen>
+	<dimen name="screen_edit_view_height_app">78dip</dimen>
+	
+	<dimen name="screen_edit_tab_margin_top">2dip</dimen>
+	<dimen name="screen_edit_tab_margin_bottom">5dip</dimen>
+
+	<dimen name="screen_edit_tab_max_height">270dip</dimen>
+	<!-- 屏幕添加模块，APP项列表的padding -->
+    <dimen name="screen_edit_view_padding_top">5dip</dimen>
+    
+    <dimen name="screen_edit_syswidget_subview_hor_margin">10dip</dimen>
+    <dimen name="screen_edit_syswidget_subview_ver_margin">5dip</dimen>
+	<!-- 添加界面 end -->
+	
+	<!-- start 屏幕层参数 -->
+	<dimen name="actual_cell_width_port">80dip</dimen>
+	<dimen name="actual_cell_height_port">100dip</dimen>
+	<dimen name="actual_cell_width_land">106dip</dimen>
+	<dimen name="actual_cell_height_land">74dip</dimen>
+	<dimen name="cell_width_port">80dip</dimen>
+	<dimen name="cell_height_port">100dip</dimen>
+	<dimen name="cell_width_land">106dip</dimen>
+	<dimen name="cell_height_land">74dip</dimen>
+	<dimen name="actual_cell_width_port_old">80dip</dimen>
+	<dimen name="actual_cell_height_port_old">100dip</dimen>
+	<dimen name="actual_cell_width_land_old">106dip</dimen>
+	<dimen name="actual_cell_height_land_old">74dip</dimen>
+	<dimen name="cell_width_port_old">80dip</dimen>
+	<dimen name="cell_height_port_old">100dip</dimen>
+	<dimen name="cell_width_land_old">106dip</dimen>
+	<dimen name="cell_height_land_old">74dip</dimen>
+	<dimen name="cell_widget_custom_padding">5dip</dimen>
+	<dimen name="screen_long_start_padding_port">25dip</dimen>
+	<dimen name="screen_long_end_padding_port">70dip</dimen>
+	<dimen name="screen_short_start_padding_port">0dip</dimen>
+	<dimen name="screen_short_end_padding_port">0dip</dimen>
+	<dimen name="screen_long_start_padding_land">0dip</dimen>
+	<dimen name="screen_long_end_padding_land">70dip</dimen>
+	<dimen name="screen_short_start_padding_land">25dip</dimen>
+	<dimen name="screen_short_end_padding_land">0dip</dimen>
+	<dimen name="screen_icon_size">48dip</dimen>
+	<!-- end 屏幕层参数 -->
+	
+	<!-- start LargeIcon -->
+	
+	
+	<dimen name="screen_long_start_padding_large_icon_port">8dip</dimen>
+	<dimen name="screen_long_start_padding_large_icon_land">8dip</dimen>
+	
+	
+	<dimen name="cell_layout_blank_height">10dip</dimen>
+	<dimen name="cell_layout_blank_width">20dip</dimen>
+	
+	<!-- end LargeIcon -->
+	
+	<!-- 功能表文件夹工具栏 -->
+	<dimen name="appdrawer_folder_action_bar_padding_top">8dip</dimen>
+	<dimen name="appdrawer_folder_action_bar_padding_left">16dip</dimen>
+	<dimen name="appdrawer_folder_action_bar_padding_right">16dip</dimen>
+	<dimen name="appdrawer_folder_action_bar_icon_size">45.3dip</dimen>
+	<dimen name="appdrawer_folder_action_bar_icon_text_size">10sp</dimen>
+	<dimen name="appdrawer_folder_action_bar_icon_text_dst">0dip</dimen>
+	
+	
+    
+    
+    
+    <!-- 功能表正在运行 -->
+    
+    
+    
+    
+    
+    <!-- 功能表屏幕预览 -->
+    <dimen name="appdrawer_preview_bar_icon_height">60dip</dimen>
+    <dimen name="appdrawer_preview_bar_padding_left">10dip</dimen>
+	<dimen name="appdrawer_preview_bar_padding_right">10dip</dimen>
+	
+	<dimen name="folder_margin_botton">40dip</dimen>
+	
+	<dimen name="folder_inside_icon_height_h">105dp</dimen>
+	<dimen name="folder_inside_icon_height_v">100dp</dimen>
+	
+	<dimen name="folder_inside_large_icon_height_h">110dp</dimen>
+	
+	<dimen name="folder_inside_large_icon_height_v">105dp</dimen>
+	
+	
+	<!-- 屏幕预览的卡片组离屏幕上下左右的间隙 -->
+	
+	<dimen name="cards_top_port">55dip</dimen>
+	<dimen name="cards_bottom_port">18.6dip</dimen>
+	<dimen name="cards_left_port">4dip</dimen>
+	<dimen name="cards_right_port">4dip</dimen>
+	
+	<dimen name="sense_indicator_top">15dip</dimen>
+	
+	
+    
+	
+	<dimen name="cards_top_land">46dip</dimen>
+	<dimen name="cards_bottom_land">6dip</dimen>
+	<dimen name="cards_left_land">25dip</dimen>
+	<dimen name="cards_right_land">25dip</dimen>
+	
+	<!-- 指示器横屏高度，只参与行列数自适应计算 -->
+
+	
+	
+
+	<!-- 屏幕预览的卡片底图使用NinePatch图片，其边框间隙如下 -->
+
+	<dimen name="screen_preview_card_padding_spacex">8dip</dimen>
+	<dimen name="screen_preview_card_padding_spacey">5.3dip</dimen>
+	
+	
+
+	<dimen name="screen_preview_card_padding_spacex_land">24dip</dimen>
+	<dimen name="screen_preview_card_padding_spacey_land">1dip</dimen>
+	
+	
+
+	<dimen name="screen_preview_drag_tip_textsize">16sp</dimen>
+	<dimen name="screen_preview_home_textsize">18sp</dimen>
+	<dimen name="screen_preview_drag_tip_text_port">40dip</dimen>
+	<dimen name="screen_preview_drag_tip_text_land">25dip</dimen>
+	<dimen name="screen_preview_drag_tip_text_padding">30dip</dimen>
+	<dimen name="screen_preview_drag_tip_text_line_space">3dip</dimen>
+	
+	<!-- 应用游戏中心widget的高度 -->
+    
+    
+    
+    <dimen name="drag_fling_min_velocity">1500dip</dimen>
+    
+    <!-- menu2.0 -->
+	<!-- 分割线的宽、高 -->
+	
+	<dimen name="message_notify_size">24dip</dimen>
+	
+	<dimen name="new_message_count_text_size">13dip</dimen>
+	
+    <dimen name="gl_card_effect_shadow_padding">6dp</dimen>
+    
+     <!-- add by zhangxi @2013-09-04 for Sidebar Text Size -->
+    <dimen name="appdrawer_sidebar_text_size">17sp</dimen>
+     <!-- add by zhangxi @2013-09-04 for Sidebar Icon Size -->
+    <dimen name="appdrawer_sidebar_icon_padding">10dp</dimen>
+    <dimen name="appdrawer_sidebar_icon_maxwidth">22dp</dimen>
+    
+    <dimen name="promanage_top_bar_container_height_v">80dp</dimen>
+    <dimen name="promanage_bottom_bar_container_height_v">200dp</dimen>
+     <dimen name="promanage_top_bar_container_height_h">80dp</dimen>
+    <dimen name="promanage_bottom_bar_container_height_h">120dp</dimen>
+    <dimen name="promanage_bottom_action_bar_padding_bottom">7dp</dimen>
+    <dimen name="promanage_clean_button_size">70dp</dimen>
+    <dimen name="promanage_memory_bar_stroke_width">3dp</dimen>
+    
+    <dimen name="promanage_top_action_bar_text_size">28sp</dimen>
+    <dimen name="promanage_top_action_bar_item_text_size">16sp</dimen>
+    <dimen name="gl_appdrawer_slide_menu_width">286dp</dimen>
+     <!-- 0屏 -->
+    <dimen name="zero_screen_search_local_history_list_item_padding">10dp</dimen>
+    <dimen name="zero_screen_search_local_history_clear_button_width">125dp</dimen>
+    <dimen name="zero_screen_search_local_history_clear_button_height">37dp</dimen>
+    
+    
+         <!-- add by zhangxi @2013-10-24 for Slidemenu Recent Icon Size -->
+    <dimen name="gl_appdrawer_slidemenu_recenticon_size">50dp</dimen>
+    
+    <dimen name="gl_notify_padding">10dp</dimen>
+    
+    <dimen name="appdrawer_sidebar_guide_add">16dp</dimen>
+	<dimen name="screenedit_slider_indicator_height">19dp</dimen>
+          <!-- 0屏 -->
+    <dimen name="zero_screen_ad_port_height">165.5dp</dimen>
+    <dimen name="zero_screen_ad_land_height">80dp</dimen>
+    <dimen name="zero_screen_ad_padding_left">16dp</dimen>
+    <dimen name="zero_screen_ad_padding_right">10dp</dimen>
+    <dimen name="zero_screen_ad_padding_top">7.5dp</dimen>
+    
+    <dimen name="zero_screen_ad_Spacing">5.5dp</dimen>
+    <dimen name="zero_screen_ad_icon_width">80dp</dimen>
+    <dimen name="zero_screen_ad_icon_height">71.5dp</dimen>
+    
+    
+    <dimen name="zero_screen_ad_webview_padding">18dp</dimen>
+    <dimen name="quick_action_menu_heigth">60dp</dimen>
+    
+    <dimen name="gl_guide_big_logo_margin_top">70dp</dimen>
+    <dimen name="gl_guide_function_margin_top">25dp</dimen>
+    <dimen name="gl_guide_new_user_title_margin_top">120dp</dimen>
+    <dimen name="gl_guide_agreement_margin_top">25dp</dimen>
+    <dimen name="gl_guide_enter_margin_bottom">30dp</dimen>
+    <dimen name="gl_guide_update_content_margin_top">10dp</dimen>
+    <dimen name="gl_guide_update_content_height">180dp</dimen>
+    
+    <dimen name="gl_menu_item_text_margin">9dp</dimen>
+    <dimen name="gl_menu_gridview_vertical_spacing">20dp</dimen>
+    
+    <dimen name="recentapp_top_bar_container_height_v">80dp</dimen>
+    <dimen name="recentapp_bottom_bar_container_height_v">200dp</dimen>
+    <dimen name="recentapp_top_bar_container_height_h">80dp</dimen>
+    <dimen name="recentapp_bottom_bar_container_height_h">120dp</dimen>
+    
+    <dimen name="screen_icon_large_size">56dip</dimen>
+    
+    <dimen name="menu_notify_no_nine_font_size">12dp</dimen>
+   	<dimen name="menu_notify_font_size">9dp</dimen>
+</resources>

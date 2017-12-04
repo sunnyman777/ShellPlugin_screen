@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+<RelativeLayout 
+    android:id="@+id/appfunc_search_result_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gl_zero_screen_tab_item_selector">
+    <!-- 
+    <com.jiubang.ggheart.apps.desks.appfunc.search.AppFuncSearchImageView
+        android:id="@+id/appfunc_search_result_list_item_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/app_name" />
+ -->
+ 
+ 	<ImageView 
+ 	    android:id="@+id/search_result_list_item_icon"
+ 	    android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+ 	    />
+    
+ 	<com.jiubang.shell.common.component.ShellTextViewWrapper
+       android:id="@+id/appfunc_search_result_list_item_name"
+       android:layout_width="match_parent"
+       android:layout_height="59dp"
+       android:gravity="center_vertical"
+       android:layout_toRightOf="@+id/search_result_list_item_icon"
+       android:layout_marginLeft="9dp"
+       android:layout_centerVertical="true"
+       android:singleLine="true"
+       android:ellipsize="end"
+       android:textColor="#494949"
+       android:textSize="16dp"
+       android:text="123" />
+
+    <ImageView
+        android:id="@+id/appfunc_search_result_list_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c1c1c1"
+        android:contentDescription="@string/app_name" />
+    <!--
+        android:background="@drawable/appfunc_search_result_list_divider"-->
+ 
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.jiubang.shell.widget.component.GLWidgetUpdateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gl_bg_appwidget_error"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dip"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="10dip" >
+    <!-- 
+    <com.go.gl.widget.GLTextViewWrapper
+        android:id="@+id/gl_widget_update_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gadget_error_text"
+        android:textColor="@color/gl_appwidget_error_color" >
+    </com.go.gl.widget.GLTextViewWrapper>
+    -->
+    <com.go.gl.widget.GLImageView
+        android:id="@+id/gl_widget_update_button"
+        android:layout_width="@dimen/app_icon_size"
+        android:layout_height="@dimen/app_icon_size"
+        android:background="@drawable/gl_update">
+    </com.go.gl.widget.GLImageView>
+    
+</com.jiubang.shell.widget.component.GLWidgetUpdateView>

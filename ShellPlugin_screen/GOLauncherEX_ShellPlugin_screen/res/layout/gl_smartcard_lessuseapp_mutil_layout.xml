@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.folder.smartcard.GLLessUseAppMutilLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp" >
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/smart_card_tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/smartcard_lessuseapp_tip"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <com.jiubang.shell.folder.smartcard.GLSmartCardButton
+            android:id="@+id/smartcard_lessuse_viewall"
+            android:layout_width="61dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/smartcard_btn_selector"
+            android:gravity="center"
+            android:text="@string/smartcard_lessuseapp_viewall"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <com.jiubang.shell.folder.smartcard.GLAverageLinearLayout
+        android:id="@+id/smartcard_lessuse_average_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" />
+
+</com.jiubang.shell.folder.smartcard.GLLessUseAppMutilLayout>

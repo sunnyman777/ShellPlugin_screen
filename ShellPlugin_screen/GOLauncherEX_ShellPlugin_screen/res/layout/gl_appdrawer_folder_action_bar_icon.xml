@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.appdrawer.allapp.actionbar.GLFolderActionBarIcon xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appdrawer_folder_action_bar_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/app_icon_padding_left_right"
+    android:paddingRight="@dimen/app_icon_padding_left_right" >
+
+    <Model3DMultiView
+        android:id="@+id/multmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.jiubang.shell.folder.GLModelFolder3DView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+        </com.jiubang.shell.folder.GLModelFolder3DView>
+    </Model3DMultiView>
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="@dimen/appdrawer_folder_action_bar_icon_text_dst"
+        android:ellipsize="end"
+        android:gravity="center_horizontal|top"
+        android:maxLines="1"
+        android:minLines="1"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/appdrawer_folder_action_bar_icon_text_size" />
+
+</com.jiubang.shell.appdrawer.allapp.actionbar.GLFolderActionBarIcon>

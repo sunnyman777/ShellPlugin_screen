@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.popupwindow.component.ggmenu.GLGGMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.jiubang.shell.popupwindow.component.ggmenu.GlMenuGridViewsContainer
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/indicator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screenedit_slider_indicator_height"
+        android:layout_below="@+id/container"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dip"
+        android:gravity="bottom"
+        android:visibility="invisible" >
+
+        <com.jiubang.shell.indicator.DesktopIndicator
+            android:id="@+id/edit_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</com.jiubang.shell.popupwindow.component.ggmenu.GLGGMenu>

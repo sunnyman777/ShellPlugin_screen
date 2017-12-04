@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- 定义与组件相关的尺寸、坐标 --><resources>
+
+    <!-- 通讯统计 -->
+    
+    
+    <dimen name="dock_notify_font_size">14dip</dimen>
+    
+	
+   <dimen name="folder_inside_icon_height_h">105dp</dimen>
+	<dimen name="folder_inside_icon_height_v">90dp</dimen>
+	
+	<dimen name="folder_inside_large_icon_height_h">110dp</dimen>
+	
+	<dimen name="folder_inside_large_icon_height_v">95dp</dimen>
+    
+	<dimen name="screen_folder_modify_icon_large_size">56dip</dimen>
+    <!-- start 屏幕层参数 -->
+    <dimen name="cell_width_port_auto_fit">76dip</dimen>
+    <dimen name="cell_height_port_auto_fit">88dip</dimen>
+    <dimen name="actual_cell_width_port">80dip</dimen> 
+    <dimen name="actual_cell_height_port">100dip</dimen> 
+    <dimen name="actual_cell_width_land">106dip</dimen> 
+    <dimen name="actual_cell_height_land">74dip</dimen>
+    <dimen name="cell_width_port">80dip</dimen> 
+    <dimen name="cell_height_port">100dip</dimen> 
+    <dimen name="cell_width_land">106dip</dimen> 
+    <dimen name="cell_height_land">74dip</dimen>
+    <dimen name="cell_width_port_old">80dip</dimen> 
+    <dimen name="cell_height_port_old">100dip</dimen> 
+    <dimen name="cell_width_land_old">106dip</dimen> 
+    <dimen name="cell_height_land_old">74dip</dimen>
+    <dimen name="screen_icon_large_size">56dip</dimen>
+</resources>

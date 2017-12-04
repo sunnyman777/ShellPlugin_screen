@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.appdrawer.recentapp.actionbar.GLRecentAppActionBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jiubang.shell.appdrawer.recentapp.actionbar.GLRecentAppCleanButtonComponent
+        android:id="@+id/clean_button_component"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.jiubang.shell.appdrawer.recentapp.actionbar.GLRecentAppCleanButton
+            android:id="@+id/btn_clean"
+            android:layout_width="@dimen/promanage_clean_button_size"
+            android:layout_height="@dimen/promanage_clean_button_size" />
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/txt_recentapp_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:textColor="@color/promanage_memory_info_text_color"
+            android:textSize="12sp"
+            android:text="@string/recentapp_clean_button_text"/>
+    </com.jiubang.shell.appdrawer.recentapp.actionbar.GLRecentAppCleanButtonComponent>
+
+</com.jiubang.shell.appdrawer.recentapp.actionbar.GLRecentAppActionBar>

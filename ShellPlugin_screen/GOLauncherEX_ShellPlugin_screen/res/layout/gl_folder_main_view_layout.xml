@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.folder.GLAppFolderMainView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/folder_main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/full_layer_background_color" >
+
+    <RelativeLayout
+        android:id="@+id/folder_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/folder_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/folder_edit_btn"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/folder_menu_btn"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center" />
+
+            <ImageView
+                android:id="@+id/folder_menu_btn"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/folder_mode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/gl_folder_mode_btn_selector"
+                android:clickable="true"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:minWidth="80dp"
+                android:singleLine="true"
+                android:text="Silent mode"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/folder_game_mode_btn_text_size"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/folder_rename_edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/folder_header_layout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLength="60"
+            android:minHeight="30dp"
+            android:minWidth="40dp"
+            android:singleLine="true"
+            android:text="@string/folder_name"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <com.jiubang.shell.indicator.DesktopIndicator
+            android:id="@+id/folder_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/folder_rename_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <com.jiubang.shell.folder.GLAppFolderGridVIewContainer
+            android:id="@+id/folder_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/folder_ad_content_layout"
+            android:layout_below="@+id/folder_indicator"
+            android:layout_marginTop="5dp" >
+        </com.jiubang.shell.folder.GLAppFolderGridVIewContainer>
+
+        <com.jiubang.shell.folder.GLAppFolderExpandContentLayout
+            android:id="@+id/folder_ad_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16.5dp"
+            android:layout_marginTop="16.5dp"
+            android:clickable="true"
+            android:visibility="invisible" >
+        </com.jiubang.shell.folder.GLAppFolderExpandContentLayout>
+    </RelativeLayout>
+
+</com.jiubang.shell.folder.GLAppFolderMainView>

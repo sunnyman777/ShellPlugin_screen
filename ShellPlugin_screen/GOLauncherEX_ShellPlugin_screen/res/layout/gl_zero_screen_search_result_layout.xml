@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.screen.zero.search.GLSearchLocalResultView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/edit_search_layout"
+    android:layout_marginTop="16dp"
+    >
+	 <ListView
+        android:id="@+id/appfunc_search_result_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:background="#eeeeee"
+        android:visibility="gone"
+        >
+    </ListView>
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/appfunc_search_no_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/appfunc_search_result_listView"
+        android:background="#eeeeee"
+        android:gravity="center_horizontal"
+        android:paddingTop="70dp"
+        android:text="@string/zero_screen_search_local_no_data"
+        android:textColor="#797979"
+        android:textSize="14dp"
+        android:visibility="gone" 
+       />
+</com.jiubang.shell.screen.zero.search.GLSearchLocalResultView>

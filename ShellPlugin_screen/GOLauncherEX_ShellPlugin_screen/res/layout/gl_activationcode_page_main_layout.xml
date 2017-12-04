@@ -1,0 +1,30 @@
+<com.jiubang.shell.activationcode.GLActivationCodeLayer xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activation_layer" android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent"
+		android:orientation="vertical" android:gravity="center_horizontal" android:paddingTop="20dp">
+    	<!-- 上部分宣传图 -->
+	    <LinearLayout android:layout_width="match_parent" android:layout_height="165dp" android:gravity="center">
+			<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/gl_activationcode_top_banner" />
+		</LinearLayout>
+		<!-- 操作区域 -->
+		<LinearLayout android:layout_width="match_parent" android:layout_height="36dp" android:orientation="horizontal" 
+		    android:gravity="center"> 
+		    <!-- 激活码输入框 -->
+		    <EditText android:id="@+id/activation_code_edittext" android:layout_width="240dp" android:layout_height="wrap_content"
+                android:singleLine="true" android:textColorHint="#FFFFFF" android:gravity="center" android:textSize="17sp" 
+                android:hint="@string/activationcode_enter_code" android:textColor="#FFFFFF" />
+		    <!-- 体验按钮 -->
+		    <Button android:id="@+id/enter_launcher_btn" android:layout_width="90dp" android:background="@drawable/gl_activationcode_btn_selector" 
+			    android:textColor="#FFFFFF" android:textSize="17sp" android:layout_height="match_parent" android:gravity="center" 
+			    android:text="@string/activationcode_get_now"/>
+	    </LinearLayout>
+    	<!-- 下部分宣传图 -->
+	    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_horizontal|bottom">
+			<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/gl_activationcode_bottom_banner" />
+		</LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/progress_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone" android:background="#60272727">
+		<com.jiubang.shell.common.component.GLProgressBar android:id="@+id/progress" android:layout_width="match_parent"
+        	android:layout_height="match_parent" android:layout_gravity="center" />
+    </LinearLayout>
+</com.jiubang.shell.activationcode.GLActivationCodeLayer>

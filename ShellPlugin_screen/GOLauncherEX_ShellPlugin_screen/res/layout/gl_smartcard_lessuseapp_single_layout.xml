@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.folder.smartcard.GLLessUseAppSingleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/smart_card_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/smartcard_lessuseapp_tip"
+        android:textColor="#dfd7d9"
+        android:textSize="12sp" />
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <com.go.gl.widget.GLImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/smartcard_app_icon"
+            android:layout_marginLeft="16dp"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/smartcard_lessuse_uninstall"
+            android:layout_toRightOf="@id/smartcard_app_icon"
+            android:orientation="vertical" >
+
+             <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/app_name"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp" />
+            
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/app_info"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="8dp"
+                android:textColor="#80FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+        
+       <com.jiubang.shell.folder.smartcard.GLSmartCardButton
+            android:id="@+id/smartcard_lessuse_uninstall"
+            android:layout_width="61dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:background="@drawable/smartcard_btn_selector"
+            android:text="@string/smartcard_lessuseapp_uninstall"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp" />
+        
+    </RelativeLayout>
+    
+
+</com.jiubang.shell.folder.smartcard.GLLessUseAppSingleLayout>

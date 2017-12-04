@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.preview.GLSense
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/senselayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+        >
+        
+  <com.jiubang.shell.preview.GLSenseWorkspace
+		android:id="@+id/senseWorkspace"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    />
+  
+  <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/sense_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/screen_preview_drag_tip_text_padding"
+        android:paddingRight="@dimen/screen_preview_drag_tip_text_padding"
+        /> 
+</com.jiubang.shell.preview.GLSense>

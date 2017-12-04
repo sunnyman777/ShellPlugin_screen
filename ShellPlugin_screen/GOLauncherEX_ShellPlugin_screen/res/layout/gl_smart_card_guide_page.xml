@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.folder.smartcard.GLSmartCardGuidePage xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/gl_smart_card_guide_imageView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15.35dp"
+            android:contentDescription="@string/app_name" />
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/gl_smart_card_guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15.35dp"
+            android:layout_toRightOf="@+id/gl_smart_card_guide_imageView"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/gl_smart_card_guide_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gl_smart_card_guide_title"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="9.33dp"
+            android:layout_toRightOf="@+id/gl_smart_card_guide_imageView"
+            android:textColor="#B2ffffff"
+            android:textSize="10.7sp" />
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/gl_smart_card_guide_operation_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15.33dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#ffffff"
+            android:textSize="10.7sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</com.jiubang.shell.folder.smartcard.GLSmartCardGuidePage>

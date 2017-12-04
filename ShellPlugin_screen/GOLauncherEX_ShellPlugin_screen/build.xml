@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2011 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<project name="GoLauncherEX_ShellPlugin" default="debug">
+
+    <!-- The local.properties file is created and updated by the 'android' tool.
+         It contains the path to the SDK. It should *NOT* be checked into
+         Version Control Systems. -->
+    <property file="local.properties" />
+
+    <!-- The ant.properties file can be created by you. It is only edited by the
+         'android' tool to add properties to it.
+         This is the place to change some Ant specific build properties.
+         Here are some properties you may want to change/update:
+
+         source.dir
+             The name of the source directory. Default is 'src'.
+         out.dir
+             The name of the output directory. Default is 'bin'.
+
+         For other overridable properties, look at the beginning of the rules
+         files in the SDK, at tools/ant/build.xml
+
+         Properties related to the SDK location or the project target should
+         be updated using the 'android' tool with the 'update' action.
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems.
+
+         -->
+    <property file="ant.properties" />
+
+    <!-- The project.properties file is created and updated by the 'android'
+         tool, as well as ADT.
+
+         This contains project specific properties such as project target, and library
+         dependencies. Lower level build properties are stored in ant.properties
+         (or in .classpath for Eclipse projects).
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems. -->
+    <loadproperties srcFile="project.properties" />
+
+    <!-- quick check on sdk.dir -->
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through an env var"
+            unless="sdk.dir"
+    />
+
+
+<!-- extension targets. Uncomment the ones where you want to do custom work
+     in between standard targets -->
+<!--
+    <target name="-pre-build">
+    </target>
+    <target name="-pre-compile">
+    </target>
+
+    /* This is typically used for code obfuscation.
+       Compiled code location: ${out.classes.absolute.dir}
+       If this is not done in place, override ${out.dex.input.absolute.dir} */
+    <target name="-post-compile">
+    </target>
+-->
+
+    <!-- Import the actual build file.
+
+         To customize existing targets, there are two options:
+         - Customize only one target:
+             - copy/paste the target into this file, *before* the
+               <import> task.
+             - customize it to your needs.
+         - Customize the whole content of build.xml
+             - copy/paste the content of the rules files (minus the top node)
+               into this file, replacing the <import> task.
+             - customize to your needs.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
+         in order to avoid having your file be overridden by tools such as "android update project"
+    -->
+     
+    <!-- Code Generation: compile resources (aapt -> R.java), aidl, renderscript -->
+    <target name="-code-gen">
+        <!-- always merge manifest -->
+        <mergemanifest
+                appManifest="${manifest.abs.file}"
+                outManifest="${out.manifest.abs.file}"
+                enabled="${manifestmerger.enabled}">
+            <library refid="project.library.manifest.file.path" />
+        </mergemanifest>
+
+        <do-only-if-manifest-hasCode
+                elseText="hasCode = false. Skipping aidl/renderscript/R.java">
+            <echo level="info">Handling aidl files...</echo>
+            <aidl executable="${aidl}"
+                    framework="${project.target.framework.aidl}"
+                    libraryBinAidlFolderPathRefid="project.library.bin.aidl.folder.path"
+                    genFolder="${gen.absolute.dir}"
+                    aidlOutFolder="${out.aidl.absolute.dir}">
+                <source path="${source.absolute.dir}"/>
+            </aidl>
+
+            <!-- renderscript generates resources so it must be called before aapt -->
+            <echo level="info">----------</echo>
+            <echo level="info">Handling RenderScript files...</echo>
+            <renderscript executable="${renderscript}"
+                    includePathRefId="android.renderscript.include.path"
+                    genFolder="${gen.absolute.dir}"
+                    resFolder="${out.res.absolute.dir}/raw"
+                    targetApi="${project.minSdkVersion}"
+                    optLevel="${renderscript.opt.level}"
+                    buildType="${build.is.packaging.debug}"
+                    previousBuildType="${build.last.is.packaging.debug}">
+                <source path="${source.absolute.dir}"/>
+            </renderscript>
+
+            <echo level="info">----------</echo>
+            <echo level="info">Handling Resources...</echo>
+            <aapt executable="${aapt}"
+                    command="package"
+                    verbose="${verbose}"
+                    manifest="${out.manifest.abs.file}"
+                    androidjar="${project.target.android.jar}"
+                    rfolder="${gen.absolute.dir}"
+                    nonConstantId="${android.library}"
+                    libraryResFolderPathRefid=""
+                    libraryPackagesRefid="project.library.packages"
+                    ignoreAssets="${aapt.ignore.assets}"
+                    proguardFile="${out.absolute.dir}/proguard.txt">
+                <res path="${out.res.absolute.dir}" />
+                <res path="${resource.absolute.dir}" />
+            </aapt>
+
+            <echo level="info">----------</echo>
+            <echo level="info">Handling BuildConfig class...</echo>
+            <buildconfig
+                    genFolder="${gen.absolute.dir}"
+                    package="${project.app.package}"
+                    buildType="${build.is.packaging.debug}"
+                    previousBuildType="${build.last.is.packaging.debug}"/>
+
+        </do-only-if-manifest-hasCode>
+    </target>
+    
+    <target name="-package-resources" depends="-crunch">
+        <!-- only package resources if *not* a library project -->
+        <do-only-if-not-library elseText="Library project: do not package resources..." >            
+            <aapt executable="${aapt}"
+                    command="package"
+                    versioncode="${version.code}"
+                    versionname="${version.name}"
+                    debug="${build.is.packaging.debug}"
+                    manifest="${out.manifest.abs.file}"
+                    assets="${asset.absolute.dir}"
+                    androidjar="${project.target.android.jar}"
+                    apkfolder="${out.absolute.dir}"
+                    nocrunch="${build.packaging.nocrunch}"
+                    resourcefilename="${resource.package.file.name}"
+                    resourcefilter="${aapt.resource.filter}"
+                    libraryResFolderPathRefid=""
+                    libraryPackagesRefid="project.library.packages"
+                    previousBuildType="${build.last.target}"
+                    buildType="${build.target}"
+                    ignoreAssets="${aapt.ignore.assets}">
+                <res path="${out.res.absolute.dir}" />
+                <res path="${resource.absolute.dir}" />
+                <!-- <nocompress /> forces no compression on any files in assets or res/raw -->
+                <!-- <nocompress extension="xml" /> forces no compression on specific file extensions in assets and res/raw -->
+            </aapt>
+        </do-only-if-not-library>
+    </target>
+    
+
+    <!-- This is a modified version of the "dex-helper" macro.  It added the "input-dir" and
+         "output-dex-file" required attributes.
+         Configurable macro, which allows to pass as parameters input directory,
+         output directory, output dex filename and external libraries to dex (optional) -->
+    <macrodef name="dex-helper-mod">
+        <attribute name="input-dir" />
+        <attribute name="output-dex-file" />
+        <element name="external-libs" optional="yes" />
+        <element name="extra-parameters" optional="yes" />
+        <attribute name="nolocals" default="false" />
+        <sequential>
+            <if>
+                <condition>
+                    <isreference refid="out.dex.jar.input.ref" />
+                </condition>
+                <else>
+                    <path id="out.dex.jar.input.ref">
+                        <path refid="project.all.jars.path" />
+                    </path>
+                </else>
+            </if>
+            
+            <echo>Converting compiled files and external libraries into @{output-dex-file}...</echo>
+            <!-- 
+            <property name="lib.full.path" refid="out.dex.jar.input.ref"/> 
+            <echo level="debug">out.dex.jar.input.ref: ${lib.full.path}</echo>
+            -->
+             
+            <echo>Plugin_inf: ${plugin_inf.dir}/${out.dir}/classes.jar</echo>
+            
+			<pathconvert property="jar.libs.without.engine" refid="out.dex.jar.input.ref">
+      			<map from="${plugin_inf.dir}/${out.dir}/classes.jar" to=""/>
+    		</pathconvert>
+            <echo level="debug">jar.libs.without.engine.ref : ${jar.libs.without.engine}</echo>
+
+            <path id="jar.libs.without.engine.ref" >
+			    <pathelement path="${jar.libs.without.engine}"/>
+			</path>
+            <dex executable="${dx}"
+                    output="@{output-dex-file}"
+                    nolocals="@{nolocals}"
+                    verbose="${verbose}">
+                <path path="@{input-dir}"/>
+                <path refid="jar.libs.without.engine.ref" />
+                <external-libs />
+            </dex>
+        </sequential>
+    </macrodef>
+
+    <!-- This is a modified version of "-dex" target taken from $SDK/tools/ant/main_rules.xml -->
+    <!-- Converts this project's .class files into .dex files   -->
+    <target name="-dex" depends="-compile, -post-compile, -obfuscate"
+            unless="do.not.compile">
+        <if condition="${manifest.hasCode}">
+            <!-- 
+            <then>
+                <mkdir dir="${out.classes.absolute.dir}.1"/>
+
+                <copy todir="${out.classes.absolute.dir}.1" >
+                    <fileset
+                        dir="${out.classes.absolute.dir}"
+                        excludes="com/jiubang/plugin/inf/R.class com/jiubang/plugin/inf/R$*.class com/jiubang/plugin/inf/Manifest.class com/jiubang/plugin/inf/Manifest$*.class com/jiubang/plugin/inf/BuildConfig.class" />
+                </copy>
+                
+                <dex-helper-mod
+                    input-dir="${out.classes.absolute.dir}.1"
+                    output-dex-file="${intermediate.dex.file}" />
+
+            </then>
+            -->
+            
+            <!-- Create staging directories to store .class files to be converted to the -->
+                <!-- default dex and the secondary dex. -->
+                <then>
+                <delete dir="${out.classes.absolute.dir}.1" verbose="${verbose}" />
+                <mkdir dir="${out.classes.absolute.dir}.1"/>
+                
+                <!-- 开启混淆需要特别处理 -->
+                <echo>============ proguard.enabled = ${proguard.enabled} ==================</echo>
+                <if condition="${proguard.enabled}">
+                    <then>
+                        <delete dir="${out.classes.absolute.dir}.2" verbose="${verbose}" />
+                        <mkdir dir="${out.classes.absolute.dir}.2"/>
+                        <!-- 解压混淆的包，然后排除插件接口的代码 -->
+                        <unzip src="${obfuscated.jar.file}" dest="${out.classes.absolute.dir}.2" overwrite="true"/>
+                        <copy todir="${out.classes.absolute.dir}.1" >
+                            <!-- 排除插件接口的所有代码 -->
+                            <fileset
+                                dir="${out.classes.absolute.dir}.2"
+                                excludes="com/go/util/file/media/** com/jiubang/ggheart/plugin/mediamanagement/inf/**" />
+                        </copy>
+                    </then>
+                    <else>
+                        <copy todir="${out.classes.absolute.dir}.1" >
+                            <!-- 排除插件接口工程生成的R类  -->
+                            <fileset
+                                dir="${out.classes.absolute.dir}"
+                                excludes="com/jiubang/plugin/inf/R.class com/jiubang/plugin/inf/R$*.class com/jiubang/plugin/inf/Manifest.class com/jiubang/plugin/inf/Manifest$*.class com/jiubang/plugin/inf/BuildConfig.class" />
+                        </copy>
+                    </else>
+                </if>
+                
+                <!-- Compile .class files from the two stage directories to the apppropriate dex files. -->
+                <dex-helper-mod
+                    input-dir="${out.classes.absolute.dir}.1"
+                    output-dex-file="${intermediate.dex.file}" />
+
+            </then>
+            <else>
+                <echo>hasCode = false. Skipping...</echo>
+            </else>
+        </if>
+    </target>
+
+    <!-- version-tag: custom -->
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

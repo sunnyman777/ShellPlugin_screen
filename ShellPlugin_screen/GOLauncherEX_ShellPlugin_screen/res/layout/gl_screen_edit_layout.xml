@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- com.jiubang.shell.screenedit.MyGLScreenEdit -->
+<com.jiubang.shell.screenedit.GLScreenEdit xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- android:background="@drawable/gl_screenedit_bg" -->
+
+    <include
+        android:id="@+id/gl_screen_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_edit_tabtitle_height"
+        android:layout_above="@+id/gl_screen_edit_container"
+        layout="@layout/gl_screen_edit_title"
+        android:visibility="visible" />
+
+    <include
+        android:id="@id/gl_screen_edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        layout="@layout/gl_screen_edit_container" />
+
+</com.jiubang.shell.screenedit.GLScreenEdit>

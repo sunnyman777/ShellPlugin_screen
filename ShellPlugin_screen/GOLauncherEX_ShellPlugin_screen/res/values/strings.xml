@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources>
+
+    <!-- 用于view的setTag的key -->
+    <item name="tag_glwidgetview" type="id"/>
+
+    <string name="app_name">GO Launcher EX</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+	
+	
+
+	<!-- screen popwindow -->
+    <string name="changeicontext">Replace</string>
+    <string name="zoomtext">Resize</string>
+    <string name="skintext">Themes</string>
+    <string name="configtext">Settings</string>
+	<string name="uninstall_fail">Unable to uninstall system app.</string>
+    <!-- dock 弹出的popwindow -->
+    <string name="deltext">Delete</string>
+    <string name="menuitem_change_icon_dock">Replace</string>
+    <string name="menuitem_change_gesture_dock">Gesture</string>
+    <string name="activity_not_found">Unable to access the application, try to restart GO Launcher</string>
+    <!-- screen start-->
+    <string name="renametext">Rename</string>
+    <string name="uninstalltext">Uninstall</string>
+    <!-- screen end -->
+    <!-- screen_edit start-->
+    <string name="defaultstyle">Default theme</string>
+ 	
+    
+    
+    
+    <string name="tab_add_visual_theme">Theme</string>
+    <string name="tab_add_visual_locker">Locker</string>
+    
+    <string name="tab_add_visual_effect">Effect</string>
+    
+    <string name="tab_add_main">Add</string>
+    <string name="tab_add_main_summary">Add apps, widget, and folder to screen</string>
+    <string name="tab_add_apps">Apps</string>
+    <string name="tab_add_apps_summary">Tap icon to add it to screen</string>
+    <string name="tab_add_folder">Folder</string>
+    <string name="tab_add_folder_summary">Tap icon to add it to screen</string>
+    <string name="tab_add_gowidget">GO Widget</string>
+    <string name="tab_add_gowidget_summary">Tap to view widget style</string>
+    <string name="tab_add_sub_gowidget_summary">Tap widget to add it to screen</string>
+    <string name="tab_add_syswidget">System Widget</string>
+    <string name="tab_add_syswidget_summary">Tap to view widget style</string>
+    <string name="tab_add_sub_syswidget_summary">Tap to view widget style</string>
+    <string name="tab_add_goshortcut">GO shortcut</string>
+    <string name="tab_add_goshortcut_summary">Tap icon to add it to screen</string>
+    
+    <string name="tab_add_wallpaper">Wallpaper</string>
+    <string name="tab_add_wallpaper_summary">You can choose GO wallpaper, system wallpaper, etc.</string>
+	<string name="tab_add_gowallpaper">GO Wallpaper</string>
+    <string name="tab_add_gowallpaper_summary">Tap to select and　preview wallpaper</string>
+	<string name="tab_add_dyngowallpaper">GO Live Wallpaper</string>
+    <string name="tab_add_dyngowallpaper_summary">Tap icon to download live　wallpaper</string>
+    
+	<string name="tab_add_effect">Effect</string>
+    <string name="tab_add_effect_summary">Tap to select and preview effects</string>    
+    
+   	<string name="random_locker_theme">Random</string>
+    
+    <string name="add_widget">Widget</string>
+    <string name="dialog_name_go_shortcut">GO shortcut</string>
+    
+    
+    <string name="go_wallpaper">GO Wallpaper</string>
+    <string name="configure_wallpaper">Configure Wallpaper</string>
+    <string name="themestore_mainlistview_btmbutton">More...</string>
+     <string name="guide_wallpapersetting_defaultstyle">Scrolling</string>
+    <string name="guide_wallpapersetting_verticalstyle">Lock</string>
+    <string name="guide_wallpapersetting_scrollable">Wallpaper is scrollable.</string>
+    <string name="guide_wallpapersetting_locked">Wallpaper has been locked.</string>
+    <string name="dialog_title_custom_effect">Random(Custom)</string>
+    <string name="no_more_room">Not enough room, choose another screen or add a new one.</string>
+    <!-- 添加widget -->
+    <string name="add_widget_failed">Not enough room, choose another screen or add a new one.</string>
+    <!-- screen_edit end -->
+    
+    
+    <!-- GoLauncher Action -->
+    
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <!-- GO多屏壁纸 -->
+    <string name="go_multiple_wallpaper_title">GO Multiple Wallpaper</string>
+    <string name="go_multiple_wallpaper_tip_content">GO Multiple Wallpaper app is not installed. Please download it.</string>
+    <string name="go_multiple_wallpaper_toast">To show multiple wallpaper effect, please switch wallpaper mode to default mode.</string>
+    <string name="not_support_live_wallpaper_toast">Sorry, your device can not support live wallpaper.</string>
+    
+    <!-- Theme info -->
+    
+   
+   
+    <!-- Go手册 -->
+    
+     <!-- Go Widget pages -->
+    
+    <string name="gowidget_detail_fb">Feedback</string>
+    <string name="gowidget_detail_uninstall">Uninstall</string>
+    <string name="gowidget_info_name">Name:</string>
+    <string name="gowidget_info_version">Version:</string>
+    <string name="gowidget_info_designer">Designer:GO Dev Team</string>
+    <string name="gowidget_info_designer_for_cleanmaster">Designer:KSmobile</string>
+    <string name="gowidget_appgame_info_fb_for_cleanmaster">Feedback:support@ksmobile.com </string>
+    <string name="gowidget_info_blog_for_cleanmaster">Blog:http://www.ksmobile.com/ </string>
+    
+    
+    <string name="gowidget_info_fb">Feedback:fboflauncher@gmail.com</string>
+    <string name="gowidget_appgame_info_fb">Feedback:golauncher@goforandroid.com</string>
+    <string name="gowidget_info_blog">Blog:golauncher.goforandroid.com</string>
+    <string name="gowidget_info_fb_subject">widget feedback</string>
+    <!-- 功能表tab文字 -->
+    
+    <string name="tabs_recentApps">Recent</string>
+    <string name="tabs_smalltools">Go Tools</string>
+    <string name="tabs_smalltools_addmore">Add More</string>
+    
+    <!-- 功能表 所有应用tab弹出菜单 -->
+    
+    <!-- 侧边栏title add by zhangxi @2013-09-04 -->
+    <string name="sidebar_title">Apps</string>
+    <string name="slide_menu_widget_title">Widget</string>
+    <string name="slide_menu_app_title">App Manager</string>
+    <string name="slide_menu_hide_title">Hide App</string>
+    
+    <string name="slide_menu_morethemes_title">More Themes</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="dlg_sortChangeTitle">Sorting mode of icon</string>
+    
+    <string name="alerDialog_error">System error, try the operation again please</string>
+    
+    <!-- 最近打开 -->
+    
+    <string name="appfunc_no_recent_data">No recent data</string>
+    <string name="appfunc_no_recent_clear">Clear</string>
+    
+    <!-- 正在运行 -->
+    <string name="lock2text">Lock</string>
+    <string name="unlock2text">UnLock</string>
+    <string name="infotext">Info</string>
+    
+    
+    
+    
+    <string name="btns_memory">Memory:</string>
+    
+    
+    <!-- 文件夹工具栏 -->
+    <string name="quick_add_folder_create_new_folder">New Folder</string>
+    <string name="quick_add_folder_game_folder">Game</string>
+    <string name="quick_add_folder_social_folder">Social</string>
+    <string name="quick_add_folder_system_folder">System</string>
+    <string name="quick_add_folder_tool_folder">Tool</string>
+    
+    
+    <!-- new theme -->
+    <string name="new_theme_title">Please select theme resources</string>
+    
+    <string name="new_theme_golauncher">GOLauncher Theme</string>
+    <string name="new_theme_gowidget">GOWidget Theme</string>
+    <string name="new_theme_golock">GOLock Theme</string>
+     <!-- Locker -->
+    
+    
+    <string name="locker_tip_title">GO Locker Tip</string>
+    <string name="locker_tip_message">GO Locker is not installed，please download.</string>
+    <string name="locker_apply_succeed">Successfully applied</string>
+    <string name="locker_default_theme">Default</string>
+    
+    
+    <string name="locker_vip_low_verson_tips_content">GO Locker version you are using will not be able to use some of the features,please update to latest version</string>
+    <string name="locker_low_verson_tips_title">Tips</string>
+    <string name="locker_low_verson_update">Update</string>
+  	 
+  <!-- dock -->
+    <string name="folder_name">Folder</string>
+    
+    <string name="no_enough_room">Not enough room, please choose others</string>
+    
+    <!-- 功能表 -->
+    <string name="dlg_deleteFolder">Attention</string>
+    <string name="dlg_deleteFolderContent">Delete the folder and release apps into app drawer?</string>
+    
+    <!-- Text to show user in place of a gadget when we can't display it properly -->
+    <string name="widget_error_text">Problem loading widget</string>
+    <string name="widget_update_to_3d">Unfortunately, this version of %s does not work on GO Launcher EX with upgraded core. Please upgrade to the newest version for improved experience</string>
+    <string name="widget_update_tips">Tips</string>
+    <string name="tip_not_now">Not Now</string>
+    <string name="tip_upgrade">Upgrade</string>
+    
+      <!-- Notification -->
+    
+    
+    <string name="toast_screen_unlock">Edit locked, use \"Menu-More\" unlock</string>
+    
+     <!-- 资源管理插件化 -->
+    <string name="mediamanagement_plugin_download_title">GO Media Manager</string>
+    <string name="download_mediamanagement_plugin_dialog_title">Media manager plugin</string>
+    <string name="download_mediamanagement_plugin_dialog_text">Media manager becomes a plugin of GO Launcher EX,it can adapt the settings of old versions,whether to download?</string>
+    <string name="download_mediamanagement_plugin_dialog_download_btn_text">Download</string>
+    <string name="download_mediamanagement_plugin_dialog_later_btn_text">Later</string>
+    <string name="download_mediamanagement_plugin_dialog_text_first">Media manager can manage photos, music and videos. Download right now?\n</string>
+    <string name="download_mediamanagement_plugin_dialog_text_middle">Tip</string>
+    <string name="download_mediamanagement_plugin_dialog_text_last">:Media manager plugin will give you more fluent experience of GO Launcher EX.</string>
+    
+    
+    <!-- 屏幕预览 -->
+    <string name="no_more_screen">Upper limit, long press to delete.</string>
+    <string name="no_less_screen">The last screen, cannot be deleted.</string>
+    
+    <string name="del_title_tip">Delete Tip</string>
+    <string name="del_content_tip">Delete the non-empty screen?</string>
+    
+    <string name="fav_app">This app is not installed. Please download it.</string>
+     <string name="preview_drag_explain">Drag screen to exchange the position or delete.</string>
+    <!-- 桌面Toast提示 -->
+    <string name="screen_long_press_new_tip">Overlap icons to create folder.</string>
+    <string name="screen_goto_func_tip">Press icons to get into the edit mode.</string>
+    <string name="appdrawer_goto_slide_menu">\'Hide app\' moved to sidebar, please tap left corner button \'Apps\'</string>
+    <string name="choose_mainscreen">Please set your homescreen</string>
+    <!-- END 桌面Toast提示 -->
+    
+    <!-- 应用中心 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="gostore_theme">Theme</string>
+    
+    
+    
+    <!-- END 应用中心 -->
+    
+    <!-- 垃圾桶 -->
+    <string name="drag_uninstall_tip">Uninstall application.</string>
+    <!-- END 垃圾桶 -->
+    
+    <string name="appdraw_arrange_dialog_title">Auto-folder</string>
+    <string name="appdraw_arrange_dialog_item_arrange">Arrange</string>
+    <string name="appdraw_arrange_dialog_item_arrange_content">Classify apps automatically</string>
+    <string name="appdraw_arrange_dialog_item_revcover">Restore</string>
+    <string name="appdraw_arrange_dialog_item_revcover_content">Restore to last layout</string>
+    
+    
+    <!-- 截图 -->
+    <string name="gl_snapshot_create_image_error_oom">out of memory when create share image</string>
+    <!-- END 截图 -->
+    
+    <!-- clean master -->
+   	
+   	
+   	<!-- clean master end -->
+   	
+   	<!-- menu2.0 -->
+    <string name="glmenu_screen_tab_common">Main</string>
+    <string name="glmenu_screen_tab_plugins">Plugins</string>
+    <string name="glmenu_screen_tab_more">More</string>
+    <string name="menuitem_wallpaper">Wallpaper</string>
+    <string name="menuitem_addprogram">Add</string>
+    <string name="menuitem_search">Search</string>
+    <string name="menuitem_setting">Settings</string>
+    <string name="menuitem_moresetting">Preferences</string>
+    
+    <string name="menuitem_screensetting">Edit</string>
+    <string name="menuitem_themesetting">Themes</string>
+    <string name="menuitem_gowidget">GO Widget</string>
+    <string name="menuitem_notification">Notification</string>
+    <string name="menuitem_language">Language</string>
+    <string name="menuitem_win_award">Win Award</string>
+    
+    <string name="menuitem_update">Update</string>
+    <string name="menuitem_rate">Rate</string>
+    <string name="menuitem_feedback">Feedback</string>
+    <string name="menuitem_expend">Status bar</string>
+    <string name="menuitem_gostore">GO Store</string>
+    <string name="menuitem_lockdesktop_lock">Lock Screen</string>
+    <string name="menuitem_lockdesktop_restart">Restart</string>
+    <string name="menuitem_lockdesktop_unlock">Unlock Screen</string>
+    <string name="menuitem_plugin_management">All plug-ins</string>
+    <string name="menuitem_hdlauncher">HDversion</string>
+    <string name="menuitem_gobackup">GO Backup</string>
+    <string name="menuitem_effect">Effect</string>
+    <string name="appcenter_title">GO Market</string>
+    <string name="gamecenter_title">GameZone</string>
+    <string name="clear_screen_title">App Manager</string>
+    <string name="menuitem_locker">GO Locker</string>
+    <string name="go_handbook_title">GO HandBook</string>
+    <string name="menuitem_msgcenter">News</string>
+    
+	<string name="app_fun_strat_loading">Initialization in progress, please wait...</string>
+   	
+   	<string name="select_widget_app">Select widget</string>
+   	<string name="ui30_title">UI3.0</string>
+   	
+   	
+    
+    
+    
+	<string name="wallpaper_filter_cannot_use">Live Wallpaper is unavailable</string>
+    
+    
+    <string name="go_dynamical_wallpaper_title">GO Live Wallpaper</string>
+    <string name="set_dynamical_wallpaper_toast_prefix">Please choose</string>
+	<string name="set_dynamical_wallpaper_toast_suffix">and set it as live wallpaper!</string>
+	
+	<string name="folder_recomended_text">Just for you</string>
+	
+	<string name="promanage_title">Apps Running</string>
+	<string name="app_classify_not_ready">Not ready, please retry.</string>
+	<string name="menuitem_hide_tilt">Hide app</string>
+	<string name="promanage_checkbox_text">Hide locked apps</string>
+	
+	<string name="appdrawer_slide_menu_title">GO Launcher</string>
+	<string name="appdrawer_slide_menu_title_prime">GO Launcher Prime</string>
+	<string name="shellutil_init_failed">This feature is incompatible with the CPU in 3D mode. Suggest to switch to 2D mode and try again.</string>
+	<string name="appdrawer_slide_menu_title_cn">GO Launcher Security</string>
+	
+	<!-- 0屏 -->
+	    <string name="zero_screen_search_local_no_data">No relevant result in your phone, please press "Search" button</string>
+    <string name="zero_screen_search_local_more_contacts">More Contacts&gt;&gt;</string>
+    <string name="zero_screen_search_local_contact">Contacts</string>
+    <string name="zero_screen_search_local_app">Apps</string>
+    
+    
+    <string name="zero_screen_search_local_contact_name_unknown">unknown</string>
+    <string name="zero_screen_search_edittext_hint">Search for local and online resources here</string>  
+    <string name="zero_screen_search_local_history_text">清除历史记录</string> 
+    <string name="zero_screen_setting_toast">You enable quick screen by "Preferences-Appearance settings-Enable the Quick Screen"</string>
+    
+    <!-- 引导页 -->
+    <string name="guide_enter">Enjoy</string>
+ 	<string name="guide_new_user_title">A New Mobile Experience</string>
+    <string name="guide_new_user_content">Is about to start</string>
+	<string name="guide_update_title">UPGRADE SUCCESSFULLY</string>
+	<string name="guide_update_enter">Back Home</string>
+	<string name="guide_user_agreement_text1">By using GO Launcher EX,</string>
+	<string name="guide_user_agreement_text2">you have read and agreed to</string>
+	<string name="guide_user_agreement_link">User Agreement.</string>
+	<string name="guide_user_agreement_link_ko"></string>
+	
+	<string name="appdrawer_slide_menu_promotion">Clean history more deeply</string>
+	<string name="appdrawer_automatically_classified">Your apps have been automatically classified!</string>
+	<string name="appdrawer_install_into_folder">%1$s has been classified into %2$s folder</string>
+	<string name="appdrawer_locate_app_in_folder">View %1$s in %2$s folder</string>
+	<string name="appdrawer_install_content">Apps installed will be classified automatically.</string>
+	
+	<string name="appdrawer_menu_item_promange_title">Memory Info:</string>
+	<string name="appdrawer_menu_item_promange_memory_release_info">Release memory %1$sM</string>
+	<string name="recentapp_clean_button_text">Clean All</string>
+	
+	
+	
+		
+  	<!-- 推荐Go动态壁纸功能 -->
+    <string name="go_recomm_live_wallpaper_title">"Next" Core</string>
+    <string name="customname_livewallpaper">GO Live Wallpaper</string>
+    <string name="recommend_livewallpaper_detail">Make your out of the ordinary mobile phone desktop</string>
+    
+    <!-- 全屏文件夹 -->
+    <string name="app_folder_menu_sort">Sort</string>
+	<string name="app_folder_menu_game_acc_on">Enable Boost</string>
+    <string name="app_folder_menu_game_acc_off">Disable Boost</string>
+    <string name="app_folder_menu_game_mode_normal">Genera mode</string>
+	<string name="app_folder_menu_game_mode_silent">Slient mode</string>
+	<string name="app_folder_menu_game_mode_power_saving">Power saving mode</string>
+	<string name="app_folder_game_acc_tips">Game Boosted by</string>
+	<string name="app_folder_game_acc_dialog_message">You are going to disable Game Boost. This step will not affect your games.</string>
+    <string name="app_folder_game_mode_silent_tips">Sounds will be off when playing games</string>
+    <string name="app_folder_game_mode_power_saving_tips">Sounds will be off and brightness will be decreased when playing games</string>
+	<string name="smartcard_title">Smart Card</string>   
+	<string name="smartcard_memclean_title_tip">Memory usage is over 90%:</string>
+	<string name="smartcard_memclean_detail_tip">Your device is running slow. Tap to boost</string> 
+	<string name="smartcard_memclean_boost">Boost</string>   
+    <string name="smartcard_memclean_release_tip">Memory released </string>
+    <string name="smartcard_lessuseapp_tip">Idel apps could be cleared:</string>
+    <string name="smartcard_lessuseapp_uninstall">Uinstall</string> 
+    <string name="smartcard_lessuseapp_idle">Idle:</string> 
+    <string name="smartcard_lessuseapp_days">day(s)</string> 
+	<string name="smartcard_lessuseapp_viewall">View all</string>
+	<string name="smartcard_updateapp_tip">Recently updated apps:</string>
+	<string name="smartcard_updateapp_open">Open</string> 
+    <string name="smartcard_light_game_add">Add</string>
+    <string name="smartcard_light_game_Play">Play</string>
+    <string name="smartcard_recommond_app_add">Add</string>
+    <string name="smartcard_recommond_app_next">Next</string>
+    <string name="smartcard_guide_page_1_title">Smart Card</string>
+    <string name="smartcard_guide_page_1_summary">Recommend things intelligently with your device.</string>
+    <string name="smartcard_guide_page_1_operation_tips">Disable this feature in Preference-Advanced Setting.</string>
+    <string name="smartcard_guide_page_2_title">Cards appear here when you need them.</string>
+    <string name="smartcard_guide_page_2_summary">Recommend best app,boost your phone,update notice and uninstall idle apps.</string>
+    <string name="smartcard_guide_page_2_operation_tips">Swipe down to ignore card.</string>
+    
+	<string name="screenedit_app_sort_by_time">Sorted by time</string>
+	<string name="screenedit_app_sort_by_name">Sorted by alphabetical</string>
+	<string name="screenedit_app_sort_by_frequency">Sorted by frequency of use</string>
+	
+	<string name="screenedit_innerwidget_more">More</string>
+	
+	
+	<!-- 5.0激活码 -->
+	<string name="activationcode_activation_success">Activation is successful</string> 
+	<string name="activationcode_system_handle_failure">System processing failed</string> 
+	<string name="activationcode_email_not_exist">Email does not exist</string> 
+	<string name="activationcode_activation_code_lapsed">Activation code is lapsed</string> 
+	<string name="activationcode_transcend_failure_number">E-mail verification than failures, please try again tomorrow</string> 
+	<string name="activationcode_email_lock">Mailbox is locked</string> 
+	<string name="activationcode_activation_code_invalid">Activation code is wrong</string>
+	<string name="activationcode_activation_failure">Activation is failure</string> 
+	<string name="activationcode_network_unavailable">Network unavailable</string>
+	<string name="activationcode_enter_code">Enter Code</string>
+	<string name="activationcode_get_now">Get Now</string>
+	<string name="menuitem_invite">Invite</string>
+	
+</resources>

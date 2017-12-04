@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/screen_edit_tab_view_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/thumbContainer"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/screen_edit_tab_margin_top"
+        android:background="@drawable/gl_screen_edit_item_select"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/gl_ic_launcher_application" />
+
+        <ImageView
+            android:id="@+id/screen_edit_item_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:paddingRight="11dp"
+            android:paddingTop="11dp"
+            android:src="@drawable/gl_gostore_bannerindicator_point_focus"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/screen_edit_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="-4dip"
+            android:layout_marginTop="-2dip"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/title"
+        android:layout_width="@dimen/screen_edit_view_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="86dp" 
+        android:orientation="vertical"
+        />
+  
+
+    <RelativeLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp" 
+        android:background="@drawable/gl_zero_screen_bg"
+        >
+
+        <GridView
+            android:id="@+id/ad_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero_screen_ad_port_height"
+            android:layout_marginTop="@dimen/zero_screen_ad_padding_top"
+            android:horizontalSpacing="@dimen/zero_screen_ad_Spacing"
+            android:numColumns="4"
+            android:paddingLeft="@dimen/zero_screen_ad_padding_left"
+            android:paddingRight="@dimen/zero_screen_ad_padding_right"
+            android:verticalSpacing="@dimen/zero_screen_ad_Spacing" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ad_grid_view"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="@dimen/zero_screen_ad_webview_padding"
+            android:paddingRight="@dimen/zero_screen_ad_webview_padding" >
+            
+       
+            <LinearLayout
+                android:id="@+id/web_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp" 
+                android:orientation="vertical"
+                />
+               
+        </FrameLayout>
+         
+    </RelativeLayout>
+
+</RelativeLayout>

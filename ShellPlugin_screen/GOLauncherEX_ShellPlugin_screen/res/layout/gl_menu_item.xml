@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.popupwindow.component.ggmenu.GLGGMenuIcon xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iconview"
+    android:layout_width="@dimen/app_icon_total_width"
+    android:layout_height="@dimen/app_icon_total_height"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/app_icon_padding_left_right"
+    android:paddingRight="@dimen/app_icon_padding_left_right" >
+
+    <Model3DMultiView
+        android:id="@+id/multmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Model3DView
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+        </Model3DView>
+
+        <ImageView
+            android:id="@+id/imge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:visibility="gone" />
+        
+    </Model3DMultiView>
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="@dimen/gl_menu_item_text_margin"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal|top"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/app_icon_font_size" />
+
+</com.jiubang.shell.popupwindow.component.ggmenu.GLGGMenuIcon>

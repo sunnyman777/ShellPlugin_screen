@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.appdrawer.widget.GLWidgetView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gl_slide_menu_widget_bg">
+    
+    <!-- <ImageView
+        android:id="@+id/appdrawer_slide_menu_widget_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/gl_slide_menu_widget"
+        android:paddingTop="4.5dp"
+        android:paddingRight="4.5dp"
+        android:paddingLeft="4.5dp"
+        android:paddingBottom="20.5dp"
+         />  -->
+    
+    <!--android:layout_gravity="center" 
+    	android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+    	android:paddingTop="8.5dp"
+        android:paddingBottom="16.5dp" -->
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/appdrawer_slide_menu_widget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_horizontal"
+        android:textSize="13sp"
+        android:paddingBottom="3.5dp"/>
+
+</com.jiubang.shell.appdrawer.widget.GLWidgetView>

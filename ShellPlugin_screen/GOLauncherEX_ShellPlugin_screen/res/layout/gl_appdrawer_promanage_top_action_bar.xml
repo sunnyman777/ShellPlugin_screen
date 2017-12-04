@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.appdrawer.promanage.actionbar.GLProManageNormalActionBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:singleLine="true"
+            android:text="@string/promanage_title"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+        <!--
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:scaleType="center" />
+        -->
+    </RelativeLayout>
+
+</com.jiubang.shell.appdrawer.promanage.actionbar.GLProManageNormalActionBar>

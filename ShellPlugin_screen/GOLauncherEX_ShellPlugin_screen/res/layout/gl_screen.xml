@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.screen.GLScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.jiubang.shell.screen.GLSuperWorkspace
+        android:id="@+id/diysuperworkspace"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.jiubang.shell.screen.GLWorkspace
+            android:id="@+id/diyworkspace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.jiubang.shell.screen.GLWorkspace>
+    </com.jiubang.shell.screen.GLSuperWorkspace>
+
+    <com.jiubang.shell.indicator.DesktopIndicator
+        android:id="@+id/desktop_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_indicator_height" />
+
+    <LinearLayout
+        android:id="@+id/workspace_textlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center|top"
+        android:background="@drawable/gl_screen_apply_succeed_bg"
+        android:visibility="gone" >
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:shadowDx="2"
+            android:shadowRadius="5"
+            android:text="@string/locker_apply_succeed"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</com.jiubang.shell.screen.GLScreen>

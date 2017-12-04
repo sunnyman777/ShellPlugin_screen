@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_sort_style">
+        <item>Alphabetical</item>
+        <item>Latest installed first</item>
+        <item>Earliest installed first</item>
+        <item>Most used first</item>
+    </string-array>
+
+    <!-- 文件夹排序方式 -->
+    <string-array name="folder_select_sort_style">
+        <item>Alphabetical</item>
+        <item>Latest added first</item>
+        <item>Earliest added first</item>
+    </string-array>
+  
+</resources>    
+	

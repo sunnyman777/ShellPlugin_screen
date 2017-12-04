@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- 定义与组件相关的尺寸、坐标 -->
+<resources>
+    
+<!--     行列数自适应 -->
+    <dimen name="cell_width_port_auto_fit">94dip</dimen>
+    <dimen name="cell_height_port_auto_fit">124dip</dimen>
+    <dimen name="actual_cell_width_port">99dip</dimen>
+    <dimen name="actual_cell_height_port">119dip</dimen>
+    <dimen name="actual_cell_width_land">125dip</dimen>
+    <dimen name="actual_cell_height_land">93dip</dimen>
+    <dimen name="cell_width_port">99dip</dimen>
+    <dimen name="cell_height_port">119dip</dimen>
+    <dimen name="cell_width_land">125dip</dimen>
+    <dimen name="cell_height_land">93dip</dimen>
+    <dimen name="screen_icon_large_size">65dip</dimen>
+
+<!--     BEGIN 自定义设置 -->
+    <dimen name="desk_setting_pagetitle_height_new">56dip</dimen>
+     
+</resources>

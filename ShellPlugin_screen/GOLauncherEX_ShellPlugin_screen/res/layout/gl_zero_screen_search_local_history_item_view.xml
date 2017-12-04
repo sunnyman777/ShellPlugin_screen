@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:orientation="horizontal"
+    android:background="@drawable/gl_zero_screen_tab_item_selector"
+    >
+	<com.jiubang.shell.common.component.ShellTextViewWrapper
+	    android:id="@+id/search_text"
+	    android:layout_weight="1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:paddingLeft="9dp"
+	    android:singleLine="true"
+	    android:ellipsize="end"
+	    android:textSize="16sp"
+	    android:layout_gravity="center_vertical"
+	    android:gravity="center_vertical"
+	    android:textColor="#494949"
+	    />
+	<ImageView 
+	    android:id="@+id/search_text_delete" 
+	    android:layout_weight="0"
+	    android:src="@drawable/gl_zero_screen_search_editview_clean_selector"
+	    android:layout_gravity="right|center_vertical"
+	    android:layout_width="42dp"
+		android:layout_height="42dp"
+		android:scaleType="centerInside"
+	    />
+</LinearLayout>
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       	android:layout_gravity="bottom"
+        android:background="#c1c1c1"
+        android:contentDescription="@string/app_name" />
+</LinearLayout>

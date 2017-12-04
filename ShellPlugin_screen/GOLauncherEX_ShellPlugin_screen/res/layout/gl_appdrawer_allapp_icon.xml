@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.jiubang.shell.appdrawer.component.GLAppDrawerAppIcon xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/allapp_iconview"
+        android:layout_width="@dimen/app_icon_total_width"
+        android:layout_height="@dimen/app_icon_total_height"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+         >
+
+        <Model3DMultiView
+            android:id="@+id/multmodel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Model3DView
+                android:id="@+id/model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center" >
+            </Model3DView>
+
+            <ImageView
+                android:id="@+id/imge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/gl_uninstall"
+                android:padding="0dp"
+                android:visibility="invisible"
+                 />
+            
+            <ImageView
+                android:id="@+id/lower_right_imge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/gl_appdrawer_promanage_lock_icon"
+                android:padding="3dp"
+                android:visibility="invisible"
+                 />
+        </Model3DMultiView>
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/app_icon_text_pad"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal|top"
+            android:minLines="2"
+            android:maxLines="2"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/app_icon_font_size" />
+   </com.jiubang.shell.appdrawer.component.GLAppDrawerAppIcon>

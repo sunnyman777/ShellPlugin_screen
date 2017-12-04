@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><!-- 定义与组件相关的尺寸、坐标 --><resources>   
+    <!-- 0屏 -->
+    <dimen name="zero_screen_ad_port_height">148dp</dimen>
+    <dimen name="zero_screen_ad_land_height">72dp</dimen>
+    <dimen name="zero_screen_ad_padding_left">16dp</dimen>
+    <dimen name="zero_screen_ad_padding_right">12dp</dimen>
+    <dimen name="zero_screen_ad_padding_top">6dp</dimen>
+    
+    <dimen name="zero_screen_ad_Spacing">4dp</dimen>
+    <dimen name="zero_screen_ad_icon_width">72.5dp</dimen>
+    <dimen name="zero_screen_ad_icon_height">72.5dp</dimen>
+    
+    
+    <dimen name="zero_screen_ad_webview_padding">16.5dp</dimen>
+    
+    <dimen name="gl_guide_big_logo_margin_top">60dp</dimen>
+    <dimen name="gl_guide_function_margin_top">25dp</dimen>
+    <dimen name="gl_guide_new_user_title_margin_top">120dp</dimen>
+    <dimen name="gl_guide_update_title_margin_top">10dp</dimen>
+    <dimen name="gl_guide_agreement_margin_top">25dp</dimen>
+    <dimen name="gl_guide_enter_margin_bottom">30dp</dimen>
+    <dimen name="gl_guide_update_content_margin_top">5dp</dimen>
+    <dimen name="gl_guide_update_content_height">240dp</dimen>
+    <dimen name="folder_game_mode_btn_text_size">14sp</dimen>
+    
+    <dimen name="dock_notify_font_size">12sp</dimen>
+</resources>

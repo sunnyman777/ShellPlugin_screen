@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.popupwindow.component.actionmenu.GLQuickActionMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/tracksRoot"
+        android:paddingTop="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gl_quickaction_bg" >
+
+        <LinearLayout
+            android:id="@+id/tracks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             />
+    </LinearLayout>
+
+     <ImageView
+        android:id="@+id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/gl_quickaction_arrow_up"
+        android:visibility="invisible" />
+     
+    <ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tracksRoot"
+        android:layout_marginTop="-10.5dip"
+        android:src="@drawable/gl_quickaction_arrow_down"
+        android:visibility="invisible" />
+
+</com.jiubang.shell.popupwindow.component.actionmenu.GLQuickActionMenu>

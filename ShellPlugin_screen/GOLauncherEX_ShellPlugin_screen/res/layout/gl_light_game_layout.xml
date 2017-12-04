@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.folder.smartcard.GLLightGameView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/gl_light_game_imageView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15.35dp"
+            android:contentDescription="@string/app_name" />
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/gl_light_game_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="15.35dp"
+            android:layout_toRightOf="@+id/gl_light_game_imageView"
+            android:textColor="#ffffff"
+            android:maxLines="2"
+            android:textSize="16sp" />
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/gl_light_game_summary"
+            android:layout_width="127.33dp"
+            android:layout_height="64.33dp"
+            android:layout_below="@+id/gl_light_game_title"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="9.33dp"
+            android:maxLines="4"
+            android:layout_toRightOf="@+id/gl_light_game_imageView"
+            android:textColor="#B2ffffff"
+            android:textSize="12sp" />
+
+        <com.jiubang.shell.folder.smartcard.GLSmartCardButton
+            android:id="@+id/gl_light_game_play_btn"
+            android:layout_width="61dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/smartcard_btn_selector"
+            android:gravity="center"
+            android:text="@string/smartcard_light_game_Play"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp" />
+
+        <com.jiubang.shell.folder.smartcard.GLSmartCardButton
+            android:id="@+id/gl_light_game_add_btn"
+            android:layout_width="61dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/gl_light_game_play_btn"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16.33dp"
+            android:background="@drawable/smartcard_btn_selector"
+            android:gravity="center"
+            android:text="@string/smartcard_light_game_add"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</com.jiubang.shell.folder.smartcard.GLLightGameView>

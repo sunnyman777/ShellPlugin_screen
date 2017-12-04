@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.appdrawer.slidemenu.slot.SlideMenuSlotItemIcon xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/appdrawer_slide_menu_slot_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="26.5dp"
+        android:paddingBottom="16.5dp"
+        android:scaleType="centerInside" />
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/appdrawer_slide_menu_slot_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:paddingTop="3.5dp"
+        android:paddingLeft="6.5dp"
+        android:textColor="@android:color/white"/>
+
+</com.jiubang.shell.appdrawer.slidemenu.slot.SlideMenuSlotItemIcon>

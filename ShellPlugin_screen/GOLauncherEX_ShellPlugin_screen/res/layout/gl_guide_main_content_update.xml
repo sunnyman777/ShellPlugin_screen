@@ -1,0 +1,277 @@
+<!-- com.jiubang.shell.common.component.GLGuideLayer -->
+<com.jiubang.shell.common.component.GLGuideLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/guide_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/masker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/guideBiglogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/gl_guide_big_logo_margin_top"
+            android:background="@drawable/gl_guide_go_logo" />
+
+        <LinearLayout
+            android:id="@+id/guideFunction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guideBiglogo"
+            android:layout_marginTop="@dimen/gl_guide_function_margin_top"
+            android:gravity="center_horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/function1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/gl_guide_function_show_3" />
+
+            <ImageView
+                android:id="@+id/function2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/gl_guide_function_show_2" />
+
+            <ImageView
+                android:id="@+id/function3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/gl_guide_function_show_1" />
+
+            <ImageView
+                android:id="@+id/function4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/gl_guide_function_show_4" />
+
+            <ImageView
+                android:id="@+id/function5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gl_guide_function_show_5" />
+        </LinearLayout>
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/guideTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guideBiglogo"
+            android:layout_marginTop="@dimen/gl_guide_new_user_title_margin_top"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="23sp" />
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/guideNewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/guideEnter"
+            android:layout_below="@id/guideTitle"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="23sp"
+            android:visibility="gone" />
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/guideUpdateVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guideTitle"
+            android:layout_marginTop="10dp"
+            android:textColor="#aaffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <com.jiubang.shell.common.component.GLGuideScrollerView
+            android:id="@+id/guideUpdateContent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gl_guide_update_content_height"
+            android:layout_below="@id/guideUpdateVersion"
+            android:layout_marginTop="@dimen/gl_guide_update_content_margin_top"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/updatelog1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/updatelog1"
+                android:textColor="#aaffffff"
+                android:textSize="15sp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/updatelog2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/updatelog2"
+                android:textColor="#aaffffff"
+                android:textSize="15sp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/updatelog3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/updatelog3"
+                android:textColor="#aaffffff"
+                android:textSize="15sp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/updatelog4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/updatelog4"
+                android:textColor="#aaffffff"
+                android:textSize="15sp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/updatelog5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/updatelog5"
+                android:textColor="#aaffffff"
+                android:textSize="15sp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/updatelog6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/updatelog6"
+                android:textColor="#aaffffff"
+                android:textSize="15sp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/updatelog7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/updatelog7"
+                android:textColor="#aaffffff"
+                android:textSize="15sp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/updatelog8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/updatelog8"
+                android:textColor="#aaffffff"
+                android:textSize="15sp" />
+        </com.jiubang.shell.common.component.GLGuideScrollerView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/actionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/gl_guide_enter_margin_bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/guideRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/gl_guide_enter_btn_selector"
+                android:gravity="center"
+                android:text="@string/menuitem_rate"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/guideEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/gl_guide_enter_btn_selector"
+                android:gravity="center"
+                android:text="@string/guide_enter"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/agreementText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gl_guide_agreement_margin_top"
+            android:gravity="center_horizontal"
+            android:text="@string/guide_user_agreement_text1"
+            android:textColor="#88ffffff"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/agreementLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/agreementLinkKo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guide_user_agreement_link_ko"
+                android:textColor="#88caff29"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/agreementText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guide_user_agreement_text2"
+                android:textColor="#88ffffff"
+                android:textScaleX="0.9"
+                android:textSize="14dp" />
+
+            <com.jiubang.shell.common.component.ShellTextViewWrapper
+                android:id="@+id/agreementLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guide_user_agreement_link"
+                android:textColor="#88caff29"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.jiubang.shell.common.component.GLGuideLayer>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.folder.smartcard.GLSmartCardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.jiubang.shell.common.component.ShellTextViewWrapper
+            android:id="@+id/smart_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/smartcard_title"
+            android:textColor="#e5e5e5"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/smart_card_indicator_layout"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <com.jiubang.shell.indicator.DesktopIndicator
+                android:id="@+id/smart_card_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.go.gl.widget.GLImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#3FFFFFFF" />
+
+    <com.jiubang.shell.folder.smartcard.GLScrollCardGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/smart_card_scroll_layout"
+        android:layout_weight="1.0"
+        />
+
+</com.jiubang.shell.folder.smartcard.GLSmartCardLayout>

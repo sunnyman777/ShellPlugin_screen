@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- com.jiubang.shell.screenedit.GLScreenEditBox -->
+<com.jiubang.shell.screenedit.GLScreenEditBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gl_screen_edit_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.jiubang.shell.indicator.DesktopIndicator
+        android:id="@+id/gl_screen_edit_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_edit_indicator_height"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/gl_screen_edit_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/gl_screen_edit_indicator"
+        android:gravity="center_vertical" />
+
+</com.jiubang.shell.screenedit.GLScreenEditBox>

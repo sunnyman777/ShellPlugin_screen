@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="60dp"
+    android:background="@drawable/gl_qa_background_change"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/quickmenu_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <com.jiubang.shell.popupwindow.component.actionmenu.GLMenuTextView
+            android:id="@+id/quickmenu_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quickmenu_pic"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:shadowColor="#3a000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:textColor="#ffffffff"
+            android:textSize="11sp" >
+        </com.jiubang.shell.popupwindow.component.actionmenu.GLMenuTextView>
+    </RelativeLayout>
+
+</RelativeLayout>

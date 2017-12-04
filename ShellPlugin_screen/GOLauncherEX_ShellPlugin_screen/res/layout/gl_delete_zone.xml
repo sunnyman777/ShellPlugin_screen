@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jiubang.shell.deletezone.GLDeleteZone xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/delete_zone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_horizontal|top" >
+
+    <ImageView
+        android:id="@+id/trashcan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/delete_zone_height"
+        android:background="@drawable/gl_trashcan_bg_normal"
+        android:scaleType="center"
+        android:src="@drawable/gl_trashcan" />
+
+    <FrameLayout
+        android:id="@+id/trashcan_anim_bg_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/trashcan_anim_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gl_trashcan_anim_bg" >
+        </ImageView>
+    </FrameLayout>
+    <com.jiubang.shell.deletezone.GLDeleteZoneClipContainer
+        android:id="@+id/trashcan_clip_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+    </com.jiubang.shell.deletezone.GLDeleteZoneClipContainer>
+
+</com.jiubang.shell.deletezone.GLDeleteZone>

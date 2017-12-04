@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appfunc_search_result_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+ 	
+ 	 <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/appfunc_search_result_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:paddingLeft="9dp"
+ 	    android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#797979"
+        android:textSize="13sp"
+        android:background="@drawable/gl_zero_screen_tab_item_selector"
+        android:text="@string/zero_screen_search_local_more_contacts"
+        android:clickable="true"
+        />
+ 	 
+ 	 <ImageView
+        android:id="@+id/appfunc_search_result_list_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c1c1c1"
+        android:contentDescription="@string/app_name" />
+ 	 
+</LinearLayout>

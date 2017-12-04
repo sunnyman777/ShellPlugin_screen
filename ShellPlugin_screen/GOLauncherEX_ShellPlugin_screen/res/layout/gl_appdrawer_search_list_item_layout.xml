@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp" >
+
+    <com.jiubang.shell.common.component.ShellTextViewWrapper
+        android:id="@+id/gl_search_list_btn"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/gl_search_web_app_btn_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="#FEFEFE"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <com.jiubang.shell.appdrawer.search.GLAppDrawerSearchAppGrid
+        android:id="@+id/gl_search_app_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="13.5dp"
+        android:layout_marginRight="13.5dp" >
+    </com.jiubang.shell.appdrawer.search.GLAppDrawerSearchAppGrid>
+
+    <include
+        android:id="@+id/gl_search_header"
+        android:layout_gravity="center"
+        layout="@layout/gl_appdrawer_search_result_header"
+        android:visibility="invisible" />
+
+</FrameLayout>

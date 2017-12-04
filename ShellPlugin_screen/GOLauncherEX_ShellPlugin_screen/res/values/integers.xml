@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 图标放大的倍数 -->
+	<integer name="app_icon_scale">37</integer>
+	<integer name="search_media_icon_tag">99</integer>
+</resources>
